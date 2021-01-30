@@ -19,78 +19,110 @@
 </head>
 <body>
     <!--INICIA BLOQUE DE INTERFAZ   -->
-    <div class="container">
-        <div class="row">
-            <div class="panel panel-info">
-          <div class="panel-heading text-center">
-            <h3><b>REGISTRO DE ALUMNOS</b></h3>
-          </div>
+    <div class="container"> 
+        <br class="row">
+            <div class="col-sm-5">
+                <div class="row p-2">
+                    <div class="col-sm text-center text-white bg-dark">
+                        <h5>Registro de Alumnos</h5>
+                    </div>
+                </div>
+            
           <div class="panel-body">
 
-        <div class="col-xs-12 col-md-6 col-lg-8">
-            Código<input type="text" class="form-control input-sm alfanumerico" id="txtcod"/>
+            <div class="row p-2">
+                <div class="col-sm">Código:</div>
+                <div class="col-sm">
+            <input type="text" class="form-control input-sm alfanumerico" id="txtcod"/>
         </div>
+    </div>
 
-        <div class="col-xs-12 col-md-6 col-lg-8">
-            Nombre<input type="text" class="form-control input-sm alfabeticos" id="txtnombre"/>
+        <div class="row p-2">
+            <div class="col-sm">Nombre:</div>
+            <div class="col-sm">
+            <input type="text" class="form-control input-sm alfabeticos" id="txtnombre"/>
         </div>
-
-        <div class="col-xs-12 col-md-6 col-lg-8">
-            Direccion<input type="text" class="form-control input-sm alfanumerico" id="txtdireccion"/>
-        </div>
-
-        <div class="col-xs-12 col-md-6 col-lg-8">
-            Municipio<input type="text" class="form-control input-sm alfabeticos" id="txtmuni"/>
-        </div>
-
-        <div class="col-xs-12 col-md-6 col-lg-8">
-            Departamento<input type="text" class="form-control input-sm alfabeticos" id="txtdepa"/>
-        </div>
+    </div>
         
-        <div class="col-xs-12 col-md-6 col-lg-8">
-            Telefono<input type="text" class="form-control input-sm enteros" id="txttel"/>
+    <div class="row p-2">
+            <div class="col-sm">Dirección:</div>
+            <div class="col-sm">
+            <input type="text" class="form-control input-sm alfanumerico" id="txtdireccion"/>
         </div>
+    </div>
 
-        <div class="col-xs-12 col-md-6 col-lg-8">
-            Fecha de Nacimiento<input type="date" class="form-control input-sm enteros" id="txtnac"/>
+    <div class="row p-2">
+            <div class="col-sm">Municipio:</div>
+            <div class="col-sm">
+           <input type="text" class="form-control input-sm alfabeticos" id="txtmuni"/>
         </div>
+    </div>
 
-        <div class="col-xs-12 col-md-6 col-lg-8">
-            Sexo<input type="text" class="form-control input-sm alfabeticos" id="txtsex"/>
+    <div class="row p-2">
+             <div div class="col-sm">Departamento:</div>
+            <div class="col-sm">
+            <input type="text" class="form-control input-sm alfabeticos" id="txtdepa"/>
         </div>
-       
+    </div>
+        
+    <div class="row p-2">
+            <div div class="col-sm">Telefono:</div>
+            <div class="col-sm">
+            <input type="text" class="form-control input-sm enteros" id="txttel"/>
+        </div>
+    </div>  
+
+    <div class="row p-2">
+            <div div class="col-sm">Fecha de Nacimiento:</div>
+            <div class="col-sm">
+            <input type="date" class="form-control input-sm enteros" id="txtnac"/>
+        </div>
+    </div>
+
+    <div class="row p-2">
+            <div div class="col-sm">Sexo:</div>
+            <div class="col-sm">
+            <input type="text" class="form-control input-sm alfabeticos" id="txtsex"/>
+        </div>
+    </div>
         
         <div class="col-xs-12 col-md-6 col-lg-8"><br>
-            <button type="button" id="btnAdd" class="btn btn-primary btn-sm" aria-label="Left Align">
+            <button type="button" id="btnAdd" class="btn btn-dark" aria-label="Left Align">
               <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Agregar
             </button>
-            <button type="button" id="btnSave" class="btn btn-success btn-sm" aria-label="Left Align">
+            <button type="button" id="btnSave" class="btn btn-info" aria-label="Left Align">
               <span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Guardar cambios
             </button>
         </div>
-        <br><br>
-<hr>
-<span class="label label-default text-center">Lista de estudiantes</span>
-<table ID='tblStudents' class='table table-striped table-responsive table-hover'>
-     <tr>
-    <th>Codigo</th>
-    <th>Nombre</th>    
-    <th>Direccion</th>     
-     <th>Municipio</th>
-     <th>Departamento</th>    
-     <th>Telefono</th> 
-     <th>Fecha de Nacimiento</th>  
-     <th>Sexo</th>    
-     <th colspan="2" align="center">Acciones</th>
-     </tr>
-     </table>
-        </div> <!-- /fin div row  -->
-
-    </div>  <!-- /fin div container  -->
+    </div>
+</div>
+<br></br>
+    <div class="row text-center text-white bg-dark">
+    <div class="col"><h5>Alumnos Registrados</h5></div>
+    </div>
+    <div class="row">
+    <div class="col">
+    <span class="text-center">Lista de estudiantes</span>
+    <table ID='tblStudents' class='table table-striped table-responsive table-hover'>
+        <tr>
+        <th>Codigo</th>
+        <th>Nombre</th>    
+        <th>Direccion</th>     
+         <th>Municipio</th>
+         <th>Departamento</th>    
+         <th>Telefono</th> 
+         <th>Fecha de Nacimiento</th>  
+         <th>Sexo</th>    
+         <th colspan="2" align="center">Editar/Eliminar</th>
+         </tr>
+         </table>
+            </div> <!-- /fin div row  -->
+    
+        </div>  <!-- /fin div container  -->
+    
     <!--FINALIZA BLOQUE DE INTERFAZ     -->
 
 <!--INCLUIMOS JQUERY Y BOOTSTRAP DESDE LOS CDN  -->
-
 <!--jQuery  -->
 <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   
 integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
@@ -102,6 +134,9 @@ crossorigin="anonymous"></script>
 
 <script src="validar.js" ></script>
 <script src="main.js" ></script>
-
+<script src="styles.css" ></script>
+<link href="styles.css" rel="stylesheet" type="text/css">
 </body>
 </html>
+
+
