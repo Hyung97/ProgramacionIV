@@ -118,7 +118,7 @@ var students = JSON.stringify({
 
 MisAlumnos.push(students);
 localStorage.setItem("MisAlumnos", JSON.stringify(MisAlumnos));
-alert("Alumnos Registrado con Exito");
+alert("Alumno Registrado con Exito");
 $('input').val('');
 $('#txtnombre').focus();
 MostrarAlumnos();
